@@ -2,7 +2,7 @@
 
 void TaskSolution()
 {
-    Console.WriteLine("Введите размер массива:");
+    Console.WriteLine("Введите размер первоначального массива:");
     int size1 = Convert.ToInt32(Console.ReadLine());
 
     string[] text = new string[size1];
