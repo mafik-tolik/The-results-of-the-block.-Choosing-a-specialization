@@ -10,7 +10,6 @@ void TaskSolution()
     string[] text = new string[size];
 
     FillArray(text);
-    PrintArray(text);
 
     void FillArray(string[] array)
     {
@@ -18,17 +17,10 @@ void TaskSolution()
         {
             array[i] = Console.ReadLine();
         }
-        Console.WriteLine("Введите размер массива:");
     }
 
-    void PrintArray(string[] array)
-    {
-        for (int i = 0; i < array.Length; i++)
-        {
-            Console.Write(string.Join(", ", array));
-        }
-        Console.WriteLine();
-    }
+    Console.WriteLine($"Вывод массива: [{string.Join(", ", text)}]");
+
 }
 
 
